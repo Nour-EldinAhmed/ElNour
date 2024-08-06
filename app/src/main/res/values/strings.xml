@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">El Nour</string>
+    <string name="forgetpassword">هل نسيت كلمة السر ؟</string>
+    <string name="regisiter">تسجيل \n الدخول</string>
+    <string name="regisiterbutton">تسجيل الدخول</string>
+    <string name="title_activity_choices">Choices</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="logout_description">تسجيل خروج</string>
+
+    <string-array name="subjects">
+        <item>احياء</item>
+        <item>جيولوجيا</item>
+        <item>عربي</item>
+    </string-array>
+    <string-array name="classs">
+        <item>الصف الاول الثانوي </item>
+        <item>الصف الثاني الثانوي </item>
+        <item>الصف الثالث الثانوي</item>
+    </string-array>
+    <string name="button1_text">عربي</string>
+    <string name="button2_text">جيولوجيا</string>
+    <string name="button3_text">احياء</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0fc"
+    tools:context=".SupportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/elnour"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="البريد الإلكتروني"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_background"
+            android:hint="أدخل البريد الإلكتروني"
+            android:textColor="@color/black"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="رقم الجوال"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/phone_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_background"
+            android:hint="أدخل رقم الجوال"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  الشكوي  / الاقتراحات"
+            android:textSize="18sp"
+            android:textColor="@color/primary_text"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/suggestions_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:background="@drawable/edit_text_background"
+            android:hint="أدخل  شكوتك /  اقتراحاتك"
+            android:inputType="textMultiLine"
+            android:layout_marginBottom="16dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="إرسال"
+            android:textSize="20sp"
+            android:textColor="@color/button_text"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
+</ScrollView>

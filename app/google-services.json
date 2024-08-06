@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "149238266942",
+    "project_id": "elnour-61667",
+    "storage_bucket": "elnour-61667.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149238266942:android:6973a7f66b0a406f27256f",
+        "android_client_info": {
+          "package_name": "com.example.elnour"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBMdCDynffQXh_qF_qHQVAQDzB7RSYpCU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

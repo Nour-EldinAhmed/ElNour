@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#000000">
+
+    <!-- Button to send message via WhatsApp -->
+    <Button
+        android:id="@+id/buttonSendWhatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="دفع عبر فودافون كاش"
+        android:background="#8970A4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF" />
+
+    <!-- EditText to input verification code -->
+    <EditText
+        android:id="@+id/editTextVerificationCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="أدخل كود التحقق"
+        android:layout_below="@+id/buttonSendWhatsApp"
+        android:layout_marginTop="20dp"
+        android:background="#1E1E1E"
+        android:textColor="#FFFFFF"
+        android:padding="10dp"
+        android:visibility="gone" />
+
+    <!-- Button to verify the code -->
+    <Button
+        android:id="@+id/buttonVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="تحقق"
+        android:background="#8970A4"
+        android:layout_below="@+id/editTextVerificationCode"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:visibility="gone" />
+
+</RelativeLayout>

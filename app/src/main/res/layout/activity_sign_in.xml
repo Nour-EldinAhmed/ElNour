@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0fc"
+    android:fitsSystemWindows="true"
+    tools:context=".SignIn">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="413dp"
+                    android:layout_height="313dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/green2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/women2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    android:text="@string/regisiter"
+                    android:textColor="#ffff"
+                    android:textSize="39sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                    app:layout_constraintHorizontal_bias="0.364"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.454" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم الهاتف"
+                android:textColor="#2f3363"
+                android:textSize="25sp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="32dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:hint="رقم الهاتف "
+                android:background="@drawable/background_edittext"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_loginphone"
+                android:inputType="phone"
+                android:padding="8dp"
+                android:textColor="#A2A4b5"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="رقم السري"
+                android:textColor="#2f3363"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:textStyle="bold"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:hint="رقم السري"
+                android:background="@drawable/background_edittext"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/edit_loginpassword"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="#A2A4b5"
+                android:textSize="16sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="التخصص"
+                android:textColor="#2f3363"
+                android:textSize="25sp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="32dp"
+                android:textStyle="bold"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="10"
+                android:textAlignment="textEnd"
+                android:entries="@array/subjects"
+                android:background="@drawable/background_edittext"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sp_subjects"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="#A2A4b5"
+                android:textSize="16sp"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_button"
+                android:text="@string/regisiterbutton"
+                android:id="@+id/btn_regisiter"
+                android:textColor="#ffff"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="28dp"
+                style="@android:style/Widget.Button"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/circle"
+                android:paddingEnd="6dp"
+                android:padding="4dp"
+                android:paddingStart="6dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

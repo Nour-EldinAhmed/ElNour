@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestUpload_Browse">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="?attr/colorSurface" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/process"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:layout_below="@id/process"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/selectVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10sp"
+        android:text="Select Video" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/uploadVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectVideo"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:text="Upload Video" />
+
+
+    <TextView
+        android:id="@+id/txt_namevid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uploadVideo"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="اسم الدرس"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_v"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_namevid"
+        android:background="@drawable/edit_text_background"
+        android:hint="اسم الدرس" />
+
+    <TextView
+        android:id="@+id/txt_vidprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_v"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="السعر"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_vidprice"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="السعر" />
+
+    <Spinner
+        android:id="@+id/sp_sss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_price"
+        android:entries="@array/subjects" />
+
+
+</RelativeLayout>
