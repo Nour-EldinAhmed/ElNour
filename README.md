@@ -1,7 +1,3 @@
-طبعًا! إليك وصفًا كاملاً يمكنك استخدامه في ملف `README` على GitHub:
-
----
-
 # ELNour App
 
 **ELNour** is an innovative educational app designed to provide recorded lessons in Arabic, geology, and biology for high school students (grades 10-12). The app offers flexible subscription options, including individual lessons and monthly subscriptions, to meet various learning needs. With high-quality content delivered by top educators, ELNour aims to enhance students' academic performance through comprehensive and accessible educational resources.
@@ -29,3 +25,11 @@ We welcome contributions to enhance the ELNour app. If you have any ideas or sug
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+
+## Contact
+
+For any questions or support, feel free to contact the project maintainer:
+
+- **Name:** Nour Eldin Ahmed
+- **GitHub:** [Nour-EldinAhmed](https://github.com/Nour-EldinAhmed)
